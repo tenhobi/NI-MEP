@@ -1,0 +1,71 @@
+\documentclass[12pt,oneside,a4paper]{book}%one-page printing
+
+%\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+%\usepackage{setspace}
+%\usepackage{epic} % Images drawn in Xfig, exported as .epic
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{amssymb}
+%\usepackage{proof}
+%\usepackage{latexsym}
+\usepackage{rotating}
+%\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{titlesec}
+
+\usepackage{enumitem}
+\usepackage{cleveref}
+\usepackage{pdflscape}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+%\usepackage{index}
+%\newindex{default}{idx}{ind}{Index}
+
+\input tex/mepmacro.tex %couple of macros for formatting the mep semestral project,
+                    %your personal and specific macros can be placed also there
+
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+
+%MEP
+\newcommand\DissTitle{Case Study: A Volley Club}
+\newcommand\FirstandFamilyName{Marek Skotnica}
+\newcommand\Email{marek.skotnica@fit.cvut.cz, robert.perg@fit.cvut.cz}
+\newcommand\Month{Prague, September}
+\newcommand\Year{2020}
+
+\newcommand\Department{Department of Software Engineering}
+\newcommand\Faculty{Faculty of Information Technology}
+\newcommand\University{Czech Technical University in Prague}
+\newcommand\Address{Th\'akurova{} 9, 160 00 Prague 6, Czech Republic}
+
+%DEMO commands
+\newcommand{\oact}[1]{\textcolor{BrickRed}{#1}}
+\newcommand{\iact}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\dact}[1]{\textcolor{NavyBlue}{#1}}
+\newcommand{\btrap}[1]{\textcolor{NavyBlue}{\uline{#1}}}
+
+
+\begin{document}
+% allow @ to appear in macro names
+\makeatletter
+\coverpagestarts
+\newpage
+\input{tex/1_abstract}
+\newpage
+\tableofcontents
+\mainbodystarts
+
+%  Chapters start here
+\input{tex/2_analysis}
+\input{tex/3_automation}
+
+%------------------------------------------------------------------------------------------
+% Use bibtex to produce bibliography used in the project
+%------------------------------------------------------------------------------------------
+\bibliographystyle{plain}
+
+\bibliography{main}
+
+\end{document}
