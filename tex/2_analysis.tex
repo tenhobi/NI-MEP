@@ -51,14 +51,58 @@ Legend:
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  & Membership Starting (TK1) & Membership Paying (TK2) \\ \hline
-Product      & membership is started  & the first fee of membership is paid \\ \hline
-Initiator      & Aspirant Member (AR1)   &  Membership Starter (AR2)\\ \hline
-Executor       & Membership Starter (AR2) & Membership Payer (AR3)       \\ \hline
-Request        & Sending a letter (\S1/1)  & Sends the invoices (\S2/1)   \\ \hline
-Promise        &  Application decision  (\S1/2)  &  Not Specified (Probably Tacit)   \\ \hline
-Decline        &  Does not allow an applicant to become member (\S1/3)  & Not Specified  \\ \hline
-Declare        & The card is sent to the member (\S2/2) & A bank statement is received  (\S2/2) \\ \hline
+Transaction  & Issuing judgement by acknowledgement (TK1) & Issuing judgement for default (TK2) \\ \hline
+Product      & Judgement by acknowledgement has been issued  & Judgement for default has been issued \\ \hline
+Initiator      &  (AR1)   &  (AR2)\\ \hline
+Executor       &  (AR2) &  (AR3)       \\ \hline
+Request        & TODO (\S1/1)  & TODO (\S2/1)   \\ \hline
+Promise        & TODO (\S1/2)  &  Not Specified (Probably Tacit)   \\ \hline
+Decline        &  TODO (\S1/3)  & Not Specified  \\ \hline
+Declare        & TODO (\S2/2) & A bank statement is received  (\S2/2) \\ \hline
+Reject         &  Not Specified             &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) &  Not Specified (Probably Tacit) \\ \hline
+Revoke Request & Not Specified                   & Not Specified        \\ \hline
+Revoke Promise & Not Specified                   &  Not Specified       \\ \hline
+Revoke Declare & Not Specified                    &  Not Specified      \\ \hline
+Revoke Accept  &  Not Specified             &   Not Specified             \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  & Annuling judgement for default (TKš) & Correcting the reasoning of the judgment (TK4) \\ \hline
+Product      & Judgement for default has been anulated  & Reasoning of the judgement has been corrected \\ \hline
+Initiator      &  TODO   &  TODO\\ \hline
+Executor       &  TODO &  TODO       \\ \hline
+Request        & TODO(\S1/1)  & May propose correcting the reasoning before the judgment becomes final.  (\S165/1)   \\ \hline
+Promise        &  TODO  (\S1/2)  &  Not Specified (Probably Tacit)   \\ \hline
+Decline        &  The court may not comply. (\S1/3)  & Not Specified  \\ \hline
+Declare        & TODO (\S2/2) & TODO (\S2/2) \\ \hline
+Reject         &  Not Specified             &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) &  Not Specified (Probably Tacit) \\ \hline
+Revoke Request & Not Specified                   & Not Specified        \\ \hline
+Revoke Promise & Not Specified                   &  Not Specified       \\ \hline
+Revoke Declare & Not Specified                    &  Not Specified      \\ \hline
+Revoke Accept  &  Not Specified             &   Not Specified             \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  & Correcting the reasoning of the judgment by court of appeal  (TK5) &  (TK6) \\ \hline
+Product      & The reasoning of the judgement has been corrected by court of appeal  & TODO \\ \hline
+Initiator      &  TODO   &  TODO\\ \hline
+Executor       &  TODO &  TODO       \\ \hline
+Request        & Makes proposal to correct the reasoning of the judgment (\S165/2)  & TODO  \\ \hline
+Promise        &  TODO  (\S1/2)  &  Not Specified (Probably Tacit)   \\ \hline
+Decline        &  The court may not comply. (\S1/3)  & Not Specified  \\ \hline
+Declare        & TODO (\S2/2) & TODO (\S2/2) \\ \hline
 Reject         &  Not Specified             &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) &  Not Specified (Probably Tacit) \\ \hline
 Revoke Request & Not Specified                   & Not Specified        \\ \hline
@@ -71,11 +115,14 @@ Revoke Accept  &  Not Specified             &   Not Specified             \\ \hl
 \begin{table}[h]
 \caption{Subject Actor Table}
 \label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|}
 \hline
-  & Aspirant Member (AR1)       & Membership Starter (AR2)  & Membership Payer (AR3)  \\ \hline
-Administrator   &  & X  &   \\ \hline
-Customer & X &  & X \\ \hline
+  & (AR1)  &  (AR2)  &  (AR3) & (AR4)  \\ \hline
+Defendant & X  &  &  &  \\ \hline
+Court &  & X &  & X \\ \hline
+Plaintiff &  &  & X & \\ \hline
+
+
 \end{tabular}
 \end{table}
 
