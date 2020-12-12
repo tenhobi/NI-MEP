@@ -18,7 +18,7 @@ jobs:
           sudo apt install python-pygments
 
       - name: Run Arara
-        run: arara thesis
+        run: arara main
 
       - name: Upload Data as Artifact
         uses: actions/upload-artifact@master
