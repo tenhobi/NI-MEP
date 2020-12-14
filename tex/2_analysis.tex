@@ -53,8 +53,8 @@ Legend:
 \hline
 Transaction  & Judgement by acknowledgement issuing (TK1) \\ \hline
 Product      & Judgement by acknowledgement has been issued   \\ \hline
-Initiator      & Defendant (AR1) \\ \hline
-Executor       &  Judgement by acknowledgement issuer (AR2)      \\ \hline
+Initiator      & Defendant of judgement by acknowledgement (AR1) \\ \hline
+Executor       & Issuer of judgement by acknowledgement (AR2)      \\ \hline
 Request        & Recognizes the claim (\S153a/1)   \\ \hline
 Promise        & Not Specified   \\ \hline
 Decline        &  Cannot be issued in matters in which a settlement cannot be concluded and approved  (\S153a/2)  \\ \hline
@@ -73,10 +73,10 @@ Revoke Accept  &  Not Specified   \\ \hline
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  & Issuing judgement for default (TK2) \\ \hline
-Product  & Judgement for default has been issued \\ \hline
-Initiator      &  Judgement for default issuer(AR3)\\ \hline
-Executor       &  Plaintiff (AR4)      \\ \hline
+Transaction  & Issuing judgement in default (TK2) \\ \hline
+Product  & Judgement in default has been issued \\ \hline
+Initiator      &  Plaintiff of judgement in default(AR3)\\ \hline
+Executor       &  Issuer of judgement in default (AR4)      \\ \hline
 Request        & The plaintiff proposes it (\S153b/1)   \\ \hline
 Promise        &  Not Specified (Probably Tacit)   \\ \hline
 Decline        &  Cannot be issued in matters in which a settlement cannot be concluded and approved (\S153b/3) \\ \hline
@@ -95,10 +95,10 @@ Revoke Accept  &  Not Specified             \\ \hline
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  & Judgement for default declining (TK3)  \\ \hline
-Product      & Judgement for default has been declined  \\ \hline
-Initiator      &  Defendant (AR5)   \\ \hline
-Executor       &  Judgement for default decliner (AR6) \\ \hline
+Transaction  & Judgement in default declining (TK3)  \\ \hline
+Product      & Judgement in default has been declined  \\ \hline
+Initiator      &  Defendant of judgement in default (AR5)   \\ \hline
+Executor       &  Judgement in default decline processor (AR6) \\ \hline
 Request        & At the request of the defendant(\S153b/4)   \\ \hline
 Promise        &  Not Specified \\ \hline
 Decline        &  no later than the date on which the judgment becomes final (\S153b/4) \\ \hline
@@ -141,8 +141,8 @@ Revoke Accept  &  Not Specified     \\ \hline
 \hline
 Transaction  & Justification of the judgment correcting by court of appeal  (TK5) \\ \hline
 Product      & Justification of the judgement has been corrected by court of appeal  \\ \hline
-Initiator      &  Court of first-instance  \\ \hline
-Executor       &  Court of appeal \\ \hline
+Initiator      &  Court of first-instance (AR9) \\ \hline
+Executor       &  Court of appeal (AR10) \\ \hline
 Request        & Makes proposal to correct the reasoning of the judgment (\S165/2)  \\ \hline
 Promise        &  Submits the case to the court of Appeal (\S165/2)    \\ \hline
 Decline        &  Not Specified   \\ \hline
@@ -161,14 +161,14 @@ Revoke Accept  &  Not Specified \\ \hline
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  &  (TK6) \\ \hline
+Transaction  &  Judgement completing (TK6) \\ \hline
 Product      &   \\ \hline
-Initiator      &   \\ \hline
-Executor       &   \\ \hline
-Request        &  (\S165/2)  \\ \hline
+Initiator      & Judgement completion suggester (AR11)  \\ \hline
+Executor       &  Judgement completion performer (AR12) \\ \hline
+Request        & Proposes that the judgment be completed (\S166/1)  \\ \hline
 Promise        &   (\S165/2)    \\ \hline
-Decline        &  Not Specified   \\ \hline
-Declare        &  (\S165/2)  \\ \hline
+Decline        &  The court rejects the proposal by resolution (\S166/2) \\ \hline
+Declare        &  The completion shall be made by a court judgment (\S166/2)  \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) \\ \hline
 Revoke Request & Not Specified       \\ \hline
@@ -183,14 +183,14 @@ Revoke Accept  &  Not Specified \\ \hline
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  &  (TK7) \\ \hline
-Product      &   \\ \hline
-Initiator      &   \\ \hline
-Executor       &   \\ \hline
-Request        &  (\S165/2)  \\ \hline
-Promise        &   (\S165/2)    \\ \hline
+Transaction  &  Resolution announcing (TK7) \\ \hline
+Product      &   Resolution has been announced \\ \hline
+Initiator      &  Resolution maker (AR13) \\ \hline
+Executor       &  Resolution announce (AR14) \\ \hline
+Request        &  The court decides by a resolution(\S167/1)  \\ \hline
+Promise        &  Not Specified   \\ \hline
 Decline        &  Not Specified   \\ \hline
-Declare        &  (\S165/2)  \\ \hline
+Declare        &  The resolution is announced to the present participants by the President of the Senate (\S168/2)  \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) \\ \hline
 Revoke Request & Not Specified       \\ \hline
@@ -252,9 +252,9 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Filing an appeal against an order for payment (TK10) \\ \hline
 Product      &  The order for payment has been appealed \\ \hline
-Initiator      &  Order for payment appealer \\ \hline
-Executor       &  Appeal order for payment processor \\ \hline
-Request        & One of the defendants fills an objection in time (\S174/2)
+Initiator      &  Order for payment appellant \\ \hline
+Executor       &  Payment order appeal processor \\ \hline
+Request        & One of the defendants fills an appeal in time (\S174/2)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
 Decline        & The court rejects the late appeal by resolution (174/3)  \\ \hline
@@ -262,6 +262,143 @@ Declare        &  Cancels the payment order in full and the court orders the hea
 Reject         &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) \\ \hline
 Revoke Request & Not Specified \\ \hline
+Revoke Promise & Not Specified  \\ \hline
+Revoke Declare & Not Specified      \\ \hline
+Revoke Accept  &  Not Specified \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  &  Electronic order for payment issuing (TK11) \\ \hline
+Product      &  Electronic order for payment has been issued \\ \hline
+Initiator      & Electronic payment order obligee \\ \hline
+Executor       &  Electronic payment order issuer \\ \hline
+Request        & Submitts a proposal by signing an electronic form (\S174a/1)
+  \\ \hline
+Promise        &    Not Specified   \\ \hline
+Decline        & President of the Senate refuses proposal by resolution (174a/4)  \\ \hline
+Declare        &  The court may issue an electronic payment order (\S174a/2)  \\ \hline
+Reject         &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) \\ \hline
+Revoke Request & Not Specified \\ \hline
+Revoke Promise & Not Specified  \\ \hline
+Revoke Declare & Not Specified      \\ \hline
+Revoke Accept  &  Not Specified \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  &  Paying the electronic order of payment (TK12) \\ \hline
+Product      &  Electronic order of payment has been paid \\ \hline
+Initiator      &  Electronic payment order issuer \\ \hline
+Executor       &  Electronic payment order payer \\ \hline
+Request        &    Court enforces payer to pay claims to plaintiff (\S172/1)
+  \\ \hline
+Promise        &    Not Specified   \\ \hline
+Decline        &  Payer may fill an objection prior to the court (\S172/1)  \\ \hline
+Declare        &  Issues order for payment(\S172/1)  \\ \hline
+Reject         &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) \\ \hline
+Revoke Request & The court cancels order for payment (\S173/2)       \\ \hline
+Revoke Promise & Not Specified  \\ \hline
+Revoke Declare & Not Specified      \\ \hline
+Revoke Accept  &  Not Specified \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  &  Filing an appeal against an electronic order for payment (TK13) \\ \hline
+Product      &  The electronic order for payment has been appealed (TK13) \\ \hline
+Initiator      &  Electronic payment order appellant \\ \hline
+Executor       & Electronic Payment order appeal processor \\ \hline
+Request        & One of the defendants fills an appeal in time (\S174/2)
+  \\ \hline
+Promise        &    Not Specified   \\ \hline
+Decline        & The court rejects the late appeal by resolution (174/3)  \\ \hline
+Declare        &  Cancels the payment order in full and the court orders the hearing (\S174/2)  \\ \hline
+Reject         &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) \\ \hline
+Revoke Request & Not Specified \\ \hline
+Revoke Promise & Not Specified  \\ \hline
+Revoke Declare & Not Specified      \\ \hline
+Revoke Accept  &  Not Specified \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  &  Issuing European order for payment (TK14) \\ \hline
+Product      &  European order for payment has been issued \\ \hline
+Initiator      &  European payment order obligee \\ \hline
+Executor       & European payment order issuer \\ \hline
+Request        &    Obligee presents a bill of exchange or a check (\S175/1)
+  \\ \hline
+Promise        &    Not Specified   \\ \hline
+Decline        &  Payer may fill an objection prior to the court (\S172/1)  \\ \hline
+Declare        &  Issues order for payment(\S172/1)  \\ \hline
+Reject         &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) \\ \hline
+Revoke Request & Not Specified    \\ \hline
+Revoke Promise & Not Specified  \\ \hline
+Revoke Declare & Not Specified      \\ \hline
+Revoke Accept  &  Not Specified \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  &  European payment order paying (TK15) \\ \hline
+Product      &  European payment order has been paid \\ \hline
+Initiator      &  European payment order issuer \\ \hline
+Executor       &  European payment order payer \\ \hline
+Request        &   The court orders the defendant to pay the required amount and costs within 15 days  (\S175/1)
+  \\ \hline
+Promise        &    Not Specified   \\ \hline
+Decline        &  If the request for an order for payment cannot be granted, the court shall order a hearing.(\S175/1)  \\ \hline
+Declare        &  Not Specified  \\ \hline
+Reject         &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) \\ \hline
+Revoke Request & Not Specified      \\ \hline
+Revoke Promise & Not Specified  \\ \hline
+Revoke Declare & Not Specified      \\ \hline
+Revoke Accept  &  Not Specified \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
+Transaction  &   Appeal proceedings of European payment order opening (TK16) \\ \hline
+Product      &  Appeal proceedings of European payment order has been opened \\ \hline
+Initiator      &  European order for payment appellant\\ \hline
+Executor       &  European payment order appeal processor \\ \hline
+Request        &   Defendant fills an appeal in time (\S175/4) \\ \hline
+Promise        &    Not Specified   \\ \hline
+Decline        &  Late appeals or appeals which do not contain reasons shall be rejected by the court.(\S175/3)  \\ \hline
+Declare        &  Not Specified  \\ \hline
+Reject         &  Not Specified   \\ \hline
+Accept         & Not Specified (Probably Tacit) \\ \hline
+Revoke Request & If the defendant withdraws the appeal, the court shall suspend the appeal proceedings by a resolution (\S175/5)      \\ \hline
 Revoke Promise & Not Specified  \\ \hline
 Revoke Declare & Not Specified      \\ \hline
 Revoke Accept  &  Not Specified \\ \hline
