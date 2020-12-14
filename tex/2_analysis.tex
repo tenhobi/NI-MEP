@@ -53,8 +53,8 @@ Legend:
 \hline
 Transaction  & Judgement by acknowledgement issuing (TK1) \\ \hline
 Product      & Judgement by acknowledgement has been issued   \\ \hline
-Initiator      & Defendant of judgement by acknowledgement (AR1) \\ \hline
-Executor       & Issuer of judgement by acknowledgement (AR2)      \\ \hline
+Initiator      & Defendant (CA1) \\ \hline
+Executor       & Issuer of judgement by acknowledgement (AR1)      \\ \hline
 Request        & Recognizes the claim (\S153a/1)   \\ \hline
 Promise        & Not Specified   \\ \hline
 Decline        &  Cannot be issued in matters in which a settlement cannot be concluded and approved  (\S153a/2)  \\ \hline
@@ -75,8 +75,8 @@ Revoke Accept  &  Not Specified   \\ \hline
 \hline
 Transaction  & Issuing judgement in default (TK2) \\ \hline
 Product  & Judgement in default has been issued \\ \hline
-Initiator      &  Plaintiff of judgement in default(AR3)\\ \hline
-Executor       &  Issuer of judgement in default (AR4)      \\ \hline
+Initiator      &  Plaintiff (CA2)\\ \hline
+Executor       &  Issuer of judgement in default (AR2)      \\ \hline
 Request        & The plaintiff proposes it (\S153b/1)   \\ \hline
 Promise        &  Not Specified (Probably Tacit)   \\ \hline
 Decline        &  Cannot be issued in matters in which a settlement cannot be concluded and approved (\S153b/3) \\ \hline
@@ -97,8 +97,8 @@ Revoke Accept  &  Not Specified             \\ \hline
 \hline
 Transaction  & Judgement in default declining (TK3)  \\ \hline
 Product      & Judgement in default has been declined  \\ \hline
-Initiator      &  Defendant of judgement in default (AR5)   \\ \hline
-Executor       &  Judgement in default decline processor (AR6) \\ \hline
+Initiator      &  Defendant (CA1)   \\ \hline
+Executor       &  Judgement in default decline processor (AR3) \\ \hline
 Request        & At the request of the defendant(\S153b/4)   \\ \hline
 Promise        &  Not Specified \\ \hline
 Decline        &  no later than the date on which the judgment becomes final (\S153b/4) \\ \hline
@@ -117,10 +117,10 @@ Revoke Accept  &  Not Specified  \\ \hline
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  &  Justification of the judgment correcting (TK4) \\ \hline
+Transaction  &  Justification of the judgment correcting by court of first instance (TK4) \\ \hline
 Product      & Justification of the judgement has been corrected \\ \hline
-Initiator      &  Correction of the justification applicant (AR7) \\ \hline
-Executor       &  Correction of the justification processor  (AR8)      \\ \hline
+Initiator      &  Participant (CA3) \\ \hline
+Executor       &  Correction of the justification first instance processor  (AR4)      \\ \hline
 Request        &  Proposes correcting the justification (\S165/1)   \\ \hline
 Promise        &  Not Specified  \\ \hline
 Decline        &  The court does not comply (\S165/2)  \\ \hline
@@ -139,10 +139,10 @@ Revoke Accept  &  Not Specified     \\ \hline
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
-Transaction  & Justification of the judgment correcting by court of appeal  (TK5) \\ \hline
+Transaction  & Justification of the judgment correcting by court of second instance  (TK5) \\ \hline
 Product      & Justification of the judgement has been corrected by court of appeal  \\ \hline
-Initiator      &  Court of first-instance (AR9) \\ \hline
-Executor       &  Court of appeal (AR10) \\ \hline
+Initiator      &  Correction of the justification first instance processor (AR4) \\ \hline
+Executor       &  Correction of the justification second instance processor (AR5) \\ \hline
 Request        & Makes proposal to correct the reasoning of the judgment (\S165/2)  \\ \hline
 Promise        &  Submits the case to the court of Appeal (\S165/2)    \\ \hline
 Decline        &  Not Specified   \\ \hline
@@ -162,11 +162,11 @@ Revoke Accept  &  Not Specified \\ \hline
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Judgement completing (TK6) \\ \hline
-Product      &   \\ \hline
-Initiator      & Judgement completion suggester (AR11)  \\ \hline
-Executor       &  Judgement completion performer (AR12) \\ \hline
+Product      &  Judgement has been completed \\ \hline
+Initiator      & Participant (CA3)  \\ \hline
+Executor       &  Judgement completion performer (AR6) \\ \hline
 Request        & Proposes that the judgment be completed (\S166/1)  \\ \hline
-Promise        &   (\S165/2)    \\ \hline
+Promise        &  Not Specified    \\ \hline
 Decline        &  The court rejects the proposal by resolution (\S166/2) \\ \hline
 Declare        &  The completion shall be made by a court judgment (\S166/2)  \\ \hline
 Reject         &  Not Specified   \\ \hline
@@ -185,8 +185,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Resolution announcing (TK7) \\ \hline
 Product      &   Resolution has been announced \\ \hline
-Initiator      &  Resolution maker (AR13) \\ \hline
-Executor       &  Resolution announce (AR14) \\ \hline
+Initiator      &  Resolution maker (AR7) \\ \hline
+Executor       &  Resolution announcer (AR8) \\ \hline
 Request        &  The court decides by a resolution(\S167/1)  \\ \hline
 Promise        &  Not Specified   \\ \hline
 Decline        &  Not Specified   \\ \hline
@@ -207,8 +207,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Order for payment issuing (TK8) \\ \hline
 Product      &  Order for payment has been issued \\ \hline
-Initiator      &  Order for payment obligee \\ \hline
-Executor       &  Order for payment issuer \\ \hline
+Initiator      &  Plaintiff (CA2) \\ \hline
+Executor       &  Order for payment issuer (AR9) \\ \hline
 Request        &   Not Specified (Probably Tacit)  \\ \hline
 Promise        &    Not Specified   \\ \hline
 Decline        &  Not Specified   \\ \hline
@@ -229,8 +229,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Paying the order for payment (TK9) \\ \hline
 Product      &  The order for payment has been paid \\ \hline
-Initiator      &  Order for payment issuer \\ \hline
-Executor       &  Order for payment payer \\ \hline
+Initiator      &  Order for payment issuer (AR9) \\ \hline
+Executor       &  Order for payment payer (AR10) \\ \hline
 Request        &    Court enforces payer to pay claims to plaintiff (\S172/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -252,8 +252,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Filing an appeal against an order for payment (TK10) \\ \hline
 Product      &  The order for payment has been appealed \\ \hline
-Initiator      &  Order for payment appellant \\ \hline
-Executor       &  Payment order appeal processor \\ \hline
+Initiator      &  Order for payment payer (AR10)  \\ \hline
+Executor       &  Payment order appeal processor (AR11) \\ \hline
 Request        & One of the defendants fills an appeal in time (\S174/2)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -275,8 +275,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Electronic order for payment issuing (TK11) \\ \hline
 Product      &  Electronic order for payment has been issued \\ \hline
-Initiator      & Electronic payment order obligee \\ \hline
-Executor       &  Electronic payment order issuer \\ \hline
+Initiator      & Plaintiff (CA2) \\ \hline
+Executor       &  Electronic payment order issuer (AR12) \\ \hline
 Request        & Submitts a proposal by signing an electronic form (\S174a/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -298,8 +298,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Paying the electronic order of payment (TK12) \\ \hline
 Product      &  Electronic order of payment has been paid \\ \hline
-Initiator      &  Electronic payment order issuer \\ \hline
-Executor       &  Electronic payment order payer \\ \hline
+Initiator      &  Electronic payment order issuer (AR12) \\ \hline
+Executor       &  Electronic payment order payer(AR13) \\ \hline
 Request        &    Court enforces payer to pay claims to plaintiff (\S172/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -321,8 +321,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Filing an appeal against an electronic order for payment (TK13) \\ \hline
 Product      &  The electronic order for payment has been appealed (TK13) \\ \hline
-Initiator      &  Electronic payment order appellant \\ \hline
-Executor       & Electronic Payment order appeal processor \\ \hline
+Initiator      &  Electronic payment order payer (AR13) \\ \hline
+Executor       & Electronic Payment order appeal processor (AR14) \\ \hline
 Request        & One of the defendants fills an appeal in time (\S174/2)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -344,8 +344,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  Issuing European order for payment (TK14) \\ \hline
 Product      &  European order for payment has been issued \\ \hline
-Initiator      &  European payment order obligee \\ \hline
-Executor       & European payment order issuer \\ \hline
+Initiator      &  Plaintiff (CA2) \\ \hline
+Executor       & European payment order issuer (AR15) \\ \hline
 Request        &    Obligee presents a bill of exchange or a check (\S175/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -367,8 +367,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &  European payment order paying (TK15) \\ \hline
 Product      &  European payment order has been paid \\ \hline
-Initiator      &  European payment order issuer \\ \hline
-Executor       &  European payment order payer \\ \hline
+Initiator      &  European payment order issuer (AR15) \\ \hline
+Executor       &  European payment order payer (AR16) \\ \hline
 Request        &   The court orders the defendant to pay the required amount and costs within 15 days  (\S175/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -390,8 +390,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \hline
 Transaction  &   Appeal proceedings of European payment order opening (TK16) \\ \hline
 Product      &  Appeal proceedings of European payment order has been opened \\ \hline
-Initiator      &  European order for payment appellant\\ \hline
-Executor       &  European payment order appeal processor \\ \hline
+Initiator      &  European payment order payer (AR16)\\ \hline
+Executor       &  European payment order appeal processor (AR17) \\ \hline
 Request        &   Defendant fills an appeal in time (\S175/4) \\ \hline
 Promise        &    Not Specified   \\ \hline
 Decline        &  Late appeals or appeals which do not contain reasons shall be rejected by the court.(\S175/3)  \\ \hline
@@ -409,14 +409,92 @@ Revoke Accept  &  Not Specified \\ \hline
 \begin{table}[h]
 \caption{Subject Actor Table}
 \label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|}
 \hline
-  & (AR1)  &  (AR2)  &  (AR3) & (AR4)  \\ \hline
-Defendant & X  &  &  &  \\ \hline
-Court &  & X &  & X \\ \hline
-Plaintiff &  &  & X & \\ \hline
+  & Issuer of judgement by acknowledgement (AR1)  &  Issuer of judgement in default (AR2)   \\ \hline
+Defendant &  &  \\ \hline
+Court & X & X  \\ \hline
+Plaintiff &  &  \\ \hline
+\end{tabular}
+\end{table}
 
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|}
+\hline
+  & Judgement in default decline processor (AR3)  &  Correction of the justification first instance processor (AR4)   \\ \hline
+Court &  & X  \\ \hline
+\end{tabular}
+\end{table}
 
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|}
+\hline
+  &  Correction of the justification second instance processor (AR5)  &  Judgement completion performer (AR6)   \\ \hline
+Court & X & X  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|}
+\hline
+  &  Resolution maker (AR7)  &  Resolution announcer (AR8)    \\ \hline
+Defendant & X  &  \\ \hline
+Court &  & X  \\ \hline
+Plaintiff &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|l|}
+\hline
+  &  Order for payment issuer (AR9)  &  Order for payment payer (AR10) &  Payment order appeal processor (AR11)   \\ \hline
+Defendant & X  &  \\ \hline
+Court &  & X  \\ \hline
+Plaintiff &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|}
+\hline
+    &  Electronic payment order issuer (AR12) &   Electronic payment order payer (AR13)   \\ \hline
+Defendant & X  &  \\ \hline
+Court &  & X  \\ \hline
+Plaintiff &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|}
+\hline
+ &  Electronic payment order appeal processor (AR14)  &   European payment order issuer (AR15)   \\ \hline
+Defendant & X  &  \\ \hline
+Court &  & X  \\ \hline
+Plaintiff &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Subject Actor Table}
+\label{tab:subjectactortable}
+\begin{tabular}{|l|l|l|}
+\hline
+   &  European payment order payer (AR16) & European payment order appeal processor (AR17)    \\ \hline
+Defendant & X  &  \\ \hline
+Court &  & X  \\ \hline
+Plaintiff &  &  \\ \hline
 \end{tabular}
 \end{table}
 
