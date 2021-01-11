@@ -664,12 +664,12 @@ Revoke Accept  &  Not Specified \\ \hline
 \label{tab:subjectactortable}
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
 \hline
-	 & soud  &  odvolávací soud & evropský soud & předseda senátu & Žalobce & Žalující & Účastník  \\ \hline
+	 & soud  &  \thead{odvolávací\\ soud} & \thead{evropský\\ soud} & \thead{předseda\\ senátu} & žalobce & žalující & účastník  \\ \hline
 Judgement by acknowledgement issuer (A1) & X &  &  & & & & \\ \hline
 Issuer of judgement in default (A2) & X &  & & & & & \\ \hline
 Judgement in default processor (A3) & X & & & & & &\\ \hline
-\thead{Correction of the justification\\ first instance processor (A4)} & X  &  & & & & &\\ \hline
-\thead{Correction of the justification\\ second instance processor (A5)} &  & X & &  & & &\\ \hline
+\makecell{Correction of the justification\\ first instance processor (A4)} & X  &  & & & & &\\ \hline
+\makecell{Correction of the justification\\ second instance processor (A5)} &  & X & &  & & &\\ \hline
 Judgement completion performer (A6) & X  & & & & & & \\ \hline
 Order for payment issuer (A7) & X  & & & & &  &\\ \hline
 Payment order appeal processor (A8) & X & & & & &  &\\ \hline
@@ -691,11 +691,15 @@ Plaintiff (CA2) &  &  & & & X &  & X\\ \hline
 
 Before starting with a CSD model, it is important to think about the transaction interaction structure. The transaction have to form one or more trees to compose into a process. You can see an example in~\cref{fig:interactionStructure}. 
 
+\begin{landscape}
+
 \begin{figure}[h]\centering
-	\includegraphics[width=\textwidth]{pic/tree}
+	\includegraphics[width=22cm]{pic/tree}
 	\caption{Interaction Structure Model}
 	\label{fig:interactionStructure}
 \end{figure}
+
+\end{landscape}
 
 \begin{figure}[h]\centering
 	\includegraphics[width=\textwidth]{pic/ocd}
