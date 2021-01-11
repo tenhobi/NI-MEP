@@ -281,6 +281,29 @@ Předseda senátu opraví v rozsudku kdykoliv i bez návrhu chyby v psaní a v p
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
+Transaction  & Judgement issuing (TK0) \\ \hline
+Product      & Judgement has been issued   \\ \hline
+Initiator      & Plaintiff (CA2) \\ \hline
+Executor       & Judgement handler (A0) \\ \hline
+Request        &  \\ \hline
+Promise        & Not Specified   \\ \hline
+Decline        &  Soud může překročit návrhy účastníků a přisoudit něco jiného \\  &  nebo více, než čeho se
+domáhají, jen tehdy, jestliže z právního \\ & předpisu vyplývá určitý způsob vypořádání vztahu mezi účastníky. (\S153/2) \\ \hline
+Declare        &  Soud rozhoduje na základě zjištěného skutkového stavu věci. (\S153/1)\\ \hline
+Reject         & Not Specified   \\ \hline
+Accept         & Not Specified \\ \hline
+Revoke Request & Not Specified \\ \hline
+Revoke Promise & Not Specified \\ \hline
+Revoke Declare & Not Specified  \\ \hline
+Revoke Accept  &  Not Specified   \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Extended Transaction Result Table}
+\label{tab:etrt}
+\begin{tabular}{|l||l|l|}
+\hline
 Transaction  & Judgement by acknowledgement issuing (TK1) \\ \hline
 Product      & Judgement by acknowledgement has been issued   \\ \hline
 Initiator      & Defendant (CA1) \\ \hline
@@ -639,91 +662,25 @@ Revoke Accept  &  Not Specified \\ \hline
 \begin{table}[h]
 \caption{Subject Actor Table}
 \label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
 \hline
-  & Issuer of judgement by acknowledgement (A1)  &  Issuer of judgement in default (A2)   \\ \hline
-soud & X & X  \\ \hline
-odvolávací soud &  &  \\ \hline
-evropský soud &  &  \\ \hline
-předseda senátu &  &  \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\caption{Subject Actor Table}
-\label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|}
-\hline
-  & Judgement in default decline processor (A3)  &  \thead{Correction of the justification\\ first instance processor (A4)}   \\ \hline
-soud & X & X  \\ \hline
-odvolávací soud &  &   \\ \hline
-evropský soud &  &  \\ \hline
-předseda senátu &  &   \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\caption{Subject Actor Table}
-\label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|}
-\hline
-  &  \thead{Correction of the justification\\ second instance processor (A5)}  &  Judgement completion performer (A6)   \\ \hline
-soud &   & X  \\ \hline
-odvolávací soud & X &   \\ \hline
-evropský soud &  &  \\ \hline
-předseda senátu &  &  \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\caption{Subject Actor Table}
-\label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|}
-\hline
-  &  Order for payment issuer (A7)  &  Payment order appeal processor (A8)    \\ \hline
-soud &  X & X \\ \hline
-odvolávací soud &   &  \\ \hline
-evropský soud &  &  \\ \hline
-předseda senátu &  &  \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\caption{Subject Actor Table}
-\label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|}
-\hline
-  &  Electronic payment order issuer (A9)  &  Electronic payment order appeal processor (A10) \\ \hline
-soud &  X & X   \\ \hline
-odvolávací soud &  &  \\ \hline
-evropský soud &  &  \\ \hline
-předseda senátu & &   \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\caption{Subject Actor Table}
-\label{tab:subjectactortable}
-\begin{tabular}{|l|l|l|}
-\hline
-    &  European payment order issuer  (A11) &   European payment order appeal processor (A12)   \\ \hline
-soud &  &    \\ \hline
-odvolávací soud &  &   \\ \hline
-evropský soud & X & X \\ \hline
-předseda senátu &  &    \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-  \caption{Subject Actor Table}
-  \label{tab:subjectactortable}
-  \begin{tabular}{|l|l|}
-  \hline
-   &  Resolution issuer (A13) \\ \hline
-soud & X \\ \hline
-odvolávací soud & \\ \hline
-evropský soud & \\ \hline
-předseda senátu & X \\ \hline
+	 & soud  &  odvolávací soud & evropský soud & předseda senátu & Žalobce & Žalující & Účastník  \\ \hline
+Judgement by acknowledgement issuer (A1) & X &  &  & & & & \\ \hline
+Issuer of judgement in default (A2) & X &  & & & & & \\ \hline
+Judgement in default processor (A3) & X & & & & & &\\ \hline
+\thead{Correction of the justification\\ first instance processor (A4)} & X  &  & & & & &\\ \hline
+\thead{Correction of the justification\\ second instance processor (A5)} &  & X & &  & & &\\ \hline
+Judgement completion performer (A6) & X  & & & & & & \\ \hline
+Order for payment issuer (A7) & X  & & & & &  &\\ \hline
+Payment order appeal processor (A8) & X & & & & &  &\\ \hline
+Electronic payment order issuer (A9) & X & & & & &  &\\ \hline
+Electronic payment order appeal processor (A10) & X & & & & &  &\\ \hline
+European payment order issuer  (A11) &  & &  X & & &  &\\ \hline
+European payment order appeal processor (A12) &  & & X & & & & \\ \hline
+Resolution issuer (A13) & X &  & & X & & &\\ \hline
+Judgement handler (A0) & X &  & &  & X & X & X\\ \hline
+Defendant (CA1) &  &  & & & & X & X\\ \hline
+Plaintiff (CA2) &  &  & & & X &  & X\\ \hline
 \end{tabular}
 \end{table}
 
