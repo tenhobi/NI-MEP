@@ -273,10 +273,10 @@ Předseda senátu opraví v rozsudku kdykoliv i bez návrhu chyby v psaní a v p
   \item Opravným prostředkem jen proti výroku o nákladech řízení je odvolání.
 \end{enumerate}
 
-\begin{landscape}
 \section{OER Step 2: Identifying Transaction Kinds and Actor Roles}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
@@ -284,11 +284,11 @@ Předseda senátu opraví v rozsudku kdykoliv i bez návrhu chyby v psaní a v p
 Transaction  & Judgement issuing (TK0) \\ \hline
 Product      & Judgement has been issued   \\ \hline
 Initiator      & Plaintiff (CA2) \\ \hline
-Executor       & Judgement handler (A0) \\ \hline
+Executor       & Judgement handler (AR0) \\ \hline
 Request        &  \\ \hline
 Promise        & Not Specified   \\ \hline
-Decline        &  Soud může překročit návrhy účastníků a přisoudit něco jiného \\  &  nebo více, než čeho se
-domáhají, jen tehdy, jestliže z právního \\ & předpisu vyplývá určitý způsob vypořádání vztahu mezi účastníky. (\S153/2) \\ \hline
+Decline        &  \makecell{Soud může překročit návrhy účastníků a přisoudit něco jiného \\ nebo více, než čeho se
+domáhají, jen tehdy, jestliže z právního \\ předpisu vyplývá určitý způsob vypořádání vztahu mezi účastníky. (\S153/2)} \\ \hline
 Declare        &  Soud rozhoduje na základě zjištěného skutkového stavu věci. (\S153/1)\\ \hline
 Reject         & Not Specified   \\ \hline
 Accept         & Not Specified \\ \hline
@@ -300,17 +300,18 @@ Revoke Accept  &  Not Specified   \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  & Judgement by acknowledgement issuing (TK1) \\ \hline
 Product      & Judgement by acknowledgement has been issued   \\ \hline
-Initiator      & Defendant (CA1) \\ \hline
-Executor       & Issuer of judgement by acknowledgement (A1)      \\ \hline
+Initiator      & Judgement handler (AR0) \\ \hline
+Executor       & Issuer of judgement by acknowledgement (AR1)      \\ \hline
 Request        & Recognizes the claim (\S153a/1)   \\ \hline
 Promise        & Not Specified   \\ \hline
-Decline        &  Cannot be issued in matters in which a settlement cannot be concluded and approved  (\S153a/2)  \\ \hline
+Decline        &  \makecell{Cannot be issued in matters in which a settlement cannot be concluded and \\ approved  (\S153a/2)}  \\ \hline
 Declare        & Decide by a judgment according to that acknowledgement (\S153a/1)  \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) \\ \hline
@@ -322,17 +323,18 @@ Revoke Accept  &  Not Specified   \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  & Issuing judgement in default (TK2) \\ \hline
 Product  & Judgement in default has been issued \\ \hline
-Initiator      &  Plaintiff (CA2)\\ \hline
-Executor       &  Issuer of judgement in default (A2)      \\ \hline
+Initiator      &  Judgement in default processor (AR3) \\ \hline
+Executor       &  Issuer of judgement in default (AR2)      \\ \hline
 Request        & The plaintiff proposes it (\S153b/1)   \\ \hline
 Promise        &  Not Specified (Probably Tacit)   \\ \hline
-Decline        &  Cannot be issued in matters in which a settlement cannot be concluded and approved (\S153b/3) \\ \hline
+Decline        &  \makecell{Cannot be issued in matters in which a settlement cannot be concluded and \\ approved (\S153b/3)} \\ \hline
 Declare        & Decides on the action by judgment for default (\S153b/1) \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         &  Not Specified (Probably Tacit) \\ \hline
@@ -344,14 +346,15 @@ Revoke Accept  &  Not Specified             \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  & Judgement in default declining (TK3)  \\ \hline
 Product      & Judgement in default has been declined  \\ \hline
-Initiator      &  Defendant (CA1)   \\ \hline
-Executor       &  Judgement in default decline processor (A3) \\ \hline
+Initiator      &  Judgement handler (AR0)   \\ \hline
+Executor       &  Judgement in default processor (AR3) \\ \hline
 Request        & At the request of the defendant(\S153b/4)   \\ \hline
 Promise        &  Not Specified \\ \hline
 Decline        &  no later than the date on which the judgment becomes final (\S153b/4) \\ \hline
@@ -366,14 +369,15 @@ Revoke Accept  &  Not Specified  \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Justification of the judgment correcting by court of first instance (TK4) \\ \hline
 Product      & Justification of the judgement has been corrected \\ \hline
-Initiator      &  Participant (CA3) \\ \hline
-Executor       &  Correction of the justification first instance processor  (A4)      \\ \hline
+Initiator      &  Judgement handler (AR0) \\ \hline
+Executor       &  Correction of the justification first instance processor  (AR4)      \\ \hline
 Request        &  Proposes correcting the justification (\S165/1)   \\ \hline
 Promise        &  Not Specified  \\ \hline
 Decline        &  The court does not comply (\S165/2)  \\ \hline
@@ -388,14 +392,15 @@ Revoke Accept  &  Not Specified     \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  & Justification of the judgment correcting by court of second instance  (TK5) \\ \hline
 Product      & Justification of the judgement has been corrected by court of appeal  \\ \hline
-Initiator      &  Correction of the justification first instance processor (A4) \\ \hline
-Executor       &  Correction of the justification second instance processor (A5) \\ \hline
+Initiator      &  Correction of the justification first instance processor (AR4) \\ \hline
+Executor       &  Correction of the justification second instance processor (AR5) \\ \hline
 Request        &   Submits the case to the court of Appeal (\S165/2)    \\ \hline
 Promise        &  Not Specified  \\ \hline
 Decline        &  Not Specified   \\ \hline
@@ -410,14 +415,15 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Judgement completing (TK6) \\ \hline
 Product      &  Judgement has been completed \\ \hline
-Initiator      & Participant (CA3)  \\ \hline
-Executor       &  Judgement completion performer (A6) \\ \hline
+Initiator      & Judgement handler (AR0)  \\ \hline
+Executor       &  Judgement completion performer (AR6) \\ \hline
 Request        & Proposes that the judgment be completed (\S166/1)  \\ \hline
 Promise        &  Not Specified    \\ \hline
 Decline        &  The court rejects the proposal by resolution (\S166/2) \\ \hline
@@ -432,18 +438,19 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Resolution issuing (TK7) \\ \hline
 Product      &   Resolution has been issued \\ \hline
-Initiator      &  Participant (CA3) \\ \hline
-Executor       &  Resolution issuer (A13) \\ \hline
+Initiator      &  Judgement handler (AR0) \\ \hline
+Executor       &  Resolution issuer (AR13) \\ \hline
 Request        &  Not Specified \\ \hline
 Promise        &  Not Specified  \\ \hline
 Decline        &  Not Specified  \\ \hline
-Declare        &  The resolution is announced to the present participants by the President of the Senate (\S168/2)  \\ \hline
+Declare        &  \makecell{The resolution is announced to the present participants by \\ the President of the Senate (\S168/2)}  \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         &  Not Specified (Probably Tacit) \\ \hline
 Revoke Request &  Not Specified       \\ \hline
@@ -454,16 +461,17 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Order for payment issuing (TK8) \\ \hline
 Product      &  Order for payment has been issued \\ \hline
-Initiator      &  Plaintiff (CA2) \\ \hline
-Executor       &  Order for payment issuer (A7) \\ \hline
-Request        &   Not Specified (Probably Tacit)  \\ \hline
-Promise        &    Not Specified   \\ \hline
+Initiator      &  Judgement handler (AR0) \\ \hline
+Executor       &  Order for payment issuer (AR7) \\ \hline
+Request        &  Not Specified (Probably Tacit)  \\ \hline
+Promise        &  Not Specified   \\ \hline
 Decline        &  Not Specified   \\ \hline
 Declare        &  Issues order for payment(\S172/1)  \\ \hline
 Reject         &  Not Specified   \\ \hline
@@ -476,13 +484,14 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Paying the order for payment (TK9) \\ \hline
 Product      &  The order for payment has been paid \\ \hline
-Initiator      &  Order for payment issuer (A7) \\ \hline
+Initiator      &  Judgement handler (AR0) \\ \hline
 Executor       &  Defendant (CA1) \\ \hline
 Request        &    Court enforces payer to pay claims to plaintiff (\S172/1)
   \\ \hline
@@ -499,6 +508,7 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
@@ -506,7 +516,7 @@ Revoke Accept  &  Not Specified \\ \hline
 Transaction  &  Filing an appeal against an order for payment (TK10) \\ \hline
 Product      &  The order for payment has been appealed \\ \hline
 Initiator      &  Defendant (CA1)  \\ \hline
-Executor       &  Payment order appeal processor (A8) \\ \hline
+Executor       &  Payment order appeal processor (AR8) \\ \hline
 Request        & One of the defendants fills an appeal in time (\S174/2)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -522,14 +532,15 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Electronic order for payment issuing (TK11) \\ \hline
 Product      &  Electronic order for payment has been issued \\ \hline
-Initiator      & Plaintiff (CA2) \\ \hline
-Executor       &  Electronic payment order issuer (A9) \\ \hline
+Initiator      & Judgement handler (AR0) \\ \hline
+Executor       & Electronic payment order issuer (AR9) \\ \hline
 Request        & Submitts a proposal by signing an electronic form (\S174a/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -545,13 +556,14 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Paying the electronic order of payment (TK12) \\ \hline
 Product      &  Electronic order of payment has been paid \\ \hline
-Initiator      &  Electronic payment order issuer (A9) \\ \hline
+Initiator      &  Judgement handler (AR0) \\ \hline
 Executor       &  Defendant (CA1) \\ \hline
 Request        &    Court enforces payer to pay claims to plaintiff (\S172/1)
   \\ \hline
@@ -568,14 +580,15 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Filing an appeal against an electronic order for payment (TK13) \\ \hline
 Product      &  The electronic order for payment has been appealed \\ \hline
-Initiator      &  Defendant (CA1) \\ \hline
-Executor       & Electronic Payment order appeal processor (A10) \\ \hline
+Initiator      & Defendant (CA1) \\ \hline
+Executor       & Electronic Payment order appeal processor (AR10) \\ \hline
 Request        & One of the defendants fills an appeal in time (\S174/2)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -591,14 +604,15 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  Issuing European order for payment (TK14) \\ \hline
 Product      &  European order for payment has been issued \\ \hline
-Initiator      &  Plaintiff (CA2) \\ \hline
-Executor       & European payment order issuer (A11) \\ \hline
+Initiator      & Judgement handler (AR0) \\ \hline
+Executor       & European payment order issuer (AR11) \\ \hline
 Request        &    Obligee presents a bill of exchange or a check (\S175/1)
   \\ \hline
 Promise        &    Not Specified   \\ \hline
@@ -614,18 +628,19 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
 \hline
 Transaction  &  European payment order paying (TK15) \\ \hline
 Product      &  European payment order has been paid \\ \hline
-Initiator      &  European payment order issuer (A11) \\ \hline
+Initiator      &  Judgement handler (AR0) \\ \hline
 Executor       &  Defendant (CA1) \\ \hline
-Request        &   The court orders the defendant to pay the required amount and costs within 15 days  (\S175/1)
+Request        &  \makecell{The court orders the defendant to pay \\ the required amount and costs within 15 days. (\S175/1)}
   \\ \hline
 Promise        &    Not Specified   \\ \hline
-Decline        &  If the request for an order for payment cannot be granted, the court shall order a hearing.(\S175/1)  \\ \hline
+Decline        &  \makecell{If the request for an order for payment cannot be granted, \\ the court shall order a hearing. (\S175/1)}  \\ \hline
 Declare        &  Not Specified  \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) \\ \hline
@@ -637,6 +652,7 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{table}
 
 \begin{table}[h]
+\centering
 \caption{Extended Transaction Result Table}
 \label{tab:etrt}
 \begin{tabular}{|l||l|l|}
@@ -644,10 +660,10 @@ Revoke Accept  &  Not Specified \\ \hline
 Transaction  &   Appeal proceedings of European payment order opening (TK16) \\ \hline
 Product      &  Appeal proceedings of European payment order has been opened \\ \hline
 Initiator      &  Defendant (CA1)\\ \hline
-Executor       &  European payment order appeal processor (A12) \\ \hline
+Executor       &  European payment order appeal processor (AR12) \\ \hline
 Request        &   Defendant fills an appeal in time (\S175/4) \\ \hline
 Promise        &    Not Specified   \\ \hline
-Decline        &  Late appeals or appeals which do not contain reasons shall be rejected by the court.(\S175/3)  \\ \hline
+Decline        &  \makecell{Late appeals or appeals which do not contain reasons \\ shall be rejected by the court. (\S175/3)} \\ \hline
 Declare        &  Not Specified  \\ \hline
 Reject         &  Not Specified   \\ \hline
 Accept         & Not Specified (Probably Tacit) \\ \hline
@@ -658,8 +674,8 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{tabular}
 \end{table}
 
-
 \begin{table}[h]
+\centering
 \caption{Subject Actor Table}
 \label{tab:subjectactortable}
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
@@ -683,9 +699,6 @@ Defendant (CA1) &  &  & & & & X & X\\ \hline
 Plaintiff (CA2) &  &  & & & X &  & X\\ \hline
 \end{tabular}
 \end{table}
-
-
-\end{landscape}
 
 \section{OER Step 3: Composing the Essential Model}
 
