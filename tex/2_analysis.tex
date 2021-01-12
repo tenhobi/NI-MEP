@@ -1,20 +1,5 @@
 \chapter{Organization Essence Revealing}
 
-The goals of this chapter are to perform an OER analysis as described in~\cite{dietz2015teoo,dietz2020enterprise}. For simplicity, we will only do the following steps: 
-
-\begin{enumerate}
-    \item Insert the project domain description into this document. 
-    \item Perform the OER analysis and find \oact{ontological acts}. Be vigilant about the \btrap{blue traps}!
-    \item Identify ontological transaction kinds and put them in the text. E.g. \oact{[TK1/rq]} If there are not enough red transactions, you can include the green ones. 
-    \item Create an extended transaction result table (e-TRT). Map the transaction acts to the project domain description. See the~\cref{tab:etrt}. 
-    \item Create a Subject-Actor table to realize the distinction between roles and DEMO actor roles. See the~\cref{tab:subjectactortable}. 
-    \item Think in trees, not in flows and create the interaction structure of your transaction kinds. See the~\cref{fig:interactionStructure}.  
-    \item Produce the Coordination Structure Diagram (CSD) and the Object Fact Diagram (OFD). See the~\cref{fig:csdModel} and ~\cref{fig:ofdModel}.  
-    \item Finally, summarize your modeling thoughts and revelations. Don't forget about missing transaction steps table~\cref{tab:missing_transaction_steps}. 
-\end{enumerate}
-
-The process description of the Volley Case and it's OER analysis was taken from the Enterprise Ontology book~\cite{dietz2020enterprise}. 
-
 %In the step 1 a coloring of the process description is made. The coloring can be done on text as well as on the flow chart diagram. 
 \section{OER Step 1: Distinguishing Performa-Informa-Forma}
 
@@ -681,6 +666,7 @@ Revoke Accept  &  Not Specified \\ \hline
 \end{tabular}
 \end{table}
 
+\begin{landscape}
 \begin{table}[h]
 \centering
 \caption{Subject Actor Table}
@@ -706,10 +692,11 @@ Defendant (CA1) &  &  & & & & X & X\\ \hline
 Plaintiff (CA2) &  &  & & & X &  & X\\ \hline
 \end{tabular}
 \end{table}
+\end{landscape}
 
 \section{OER Step 3: Composing the Essential Model}
 
-Before starting with a CSD model, it is important to think about the transaction interaction structure. The transaction have to form one or more trees to compose into a process. You can see an example in~\cref{fig:interactionStructure}. 
+OER analysis of this part of the law was very painful. The text cannot be read very well and a lot of things doesn't make sense at first. Hovewer, hopefully we analyzed it well. Below the main features of the law are designed using multiple diagrams.
 
 \begin{figure}[h]\centering
 	\includegraphics[width=\textwidth]{pic/tree}
@@ -730,10 +717,6 @@ Before starting with a CSD model, it is important to think about the transaction
 \end{figure}
 
 \section{Summary}
-
-Some comments about the OER analysis belong here. Why were you not able find some responsibilities? What was vaguely defined? Just roast the authors of the assignment (not the teachers :). 
-
-And finally, show how much information is missing in a table~\cref{tab:missing_transaction_steps}. 
 
 \begin{table}[h]\centering
 \caption{Missing Transaction Steps}

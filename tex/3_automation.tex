@@ -1,32 +1,57 @@
 \chapter{Process Automation}
 
-After doing a domain analysis, we will execute the process. 
-
-\begin{enumerate}
-    \item Create an executable BPMN model in Camunda Modeler. 
-    \item Create a functional application that supports the BPMN model using the Camunda BPM.
-    \item Create forms for BPMN activities. 
-    \item Execute the BPMN model. One happy flow, one unhappy flow. 
-    \item Create one meaningful report in the Analytics section
-    \item Demonstrate your results in a presentation. See~\cref{sec:presentation}. 
-\end{enumerate}
-
 \section{Process Design}
 
-Insert the process models in BPMN and DMN. 
+We selected main features of this part of the law and designed BPMN model.
 
 \begin{landscape}
+
     \begin{figure}[h]\centering
-        \includegraphics[width=\textwidth]{pic/bpmn}
-        \caption{BPMN diagram}
+        \includegraphics[width=22cm]{pic/bpmn}
+        \caption{BPMN main diagram}
         \label{fig:bpmnModel}
     \end{figure}
-\end{landscape}
-
-\section{Process Execution}
-
-Include screenshots of all the important execution steps here. 
+    
+    \begin{figure}[h]\centering
+        \includegraphics[width=22cm]{pic/bpmn_payments}
+        \caption{BPMN payments diagram}
+        \label{fig:bpmnPaymentsModel}
+    \end{figure}
+    
+    \end{landscape}
+    
+    \section{Process Execution}
+    
+    We also tested the BPMN model in Camunda platform. Figures below shows some of the steps of the process.
+    
+    \begin{landscape}
+        
+        \begin{figure}[h]\centering
+            \includegraphics[width=22cm]{pic/camunda1}
+            \caption{BPMN form: decide on the merits by judgement}
+            \label{fig:camunda1}
+        \end{figure}
+    
+        \begin{figure}[h]\centering
+            \includegraphics[width=22cm]{pic/camunda2}
+            \caption{BPMN form: list the corrections}
+            \label{fig:camunda2}
+        \end{figure}
+    
+        \begin{figure}[h]\centering
+            \includegraphics[width=22cm]{pic/camunda3}
+            \caption{BPMN form: submit requests to 2nd instance court}
+            \label{fig:camunda3}
+        \end{figure}
+    
+        \begin{figure}[h]\centering
+            \includegraphics[width=22cm]{pic/camunda4}
+            \caption{BPMN form: Decide to pay}
+            \label{fig:camunda4}
+        \end{figure}
+    
+    \end{landscape}
 
 \section{Results Presentation}\label{sec:presentation}
 
-An url to your 2 min presentation where you present an executive level summary of your efforts. Imagine you are presenting it to a customer who paid 100k EUR for the work. \url{https://www.youtube.com/watch?v=qfprck_Djro} 
+An url to our presentation video: \url{https://www.youtube.com/watch?v=qfprck_Djro}
