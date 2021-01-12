@@ -1,0 +1,64 @@
+<form role="form" name="form">
+
+    <!--Judgement ID-->
+    <div class="form-group">
+        <label for="judgement-id-field">Judgement ID</label>
+        <input id="judgement-id-field"
+            readonly
+            required
+            cam-variable-name="judgement_id"
+            cam-variable-type="Integer"
+            class="form-control" />
+    </div>
+
+    <!--Judgement ID-->
+    <div class="form-group">
+        <label for="correction-id-field">Correction ID</label>
+        <input id="correction-id-field"
+            cam-variable-name="correction_id"
+            cam-variable-type="Integer"
+            class="form-control" />
+    </div>
+
+    <!--Judgement text-->
+    <div class="form-group">
+        <label for="judgement-text-field">Judgement text</label>
+        <input id="judgement-text-field"
+            cam-variable-name="correction_judgement_text"
+            cam-variable-type="String"
+            class="form-control" />
+    </div>
+
+    <!--Correction reason-->
+    <div class="form-group">
+        <label for="correction-title-field">Correction title</label>
+        <input id="correction-title-field"
+            cam-variable-name="correction_title"
+            cam-variable-type="String"
+            class="form-control" />
+    </div>
+
+    <!--Correction reason-->
+    <div class="form-group">
+        <label for="correction-reason-field">Correction reason</label>
+        <input id="obligor-field"
+            cam-variable-name="correction_reason"
+            cam-variable-type="String"
+            class="form-control" />
+    </div>
+
+    <!--Attachments-->
+    <div class="form-group">
+        <a cam-file-download="judgement_attachments">Attachments</a>
+    </div>
+
+    <!--Accept-->
+    <div class="form-group">
+        <label for="accepted-field">Issue correction</label>
+        <input id="accepted-field"
+                type="checkbox"
+                cam-variable-name="var_corrections_exists"
+                cam-variable-type="Boolean"
+                class="form-control" />
+    </div>
+</form>

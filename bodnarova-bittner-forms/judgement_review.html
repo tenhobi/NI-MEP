@@ -1,0 +1,37 @@
+<form role="form" name="form">
+
+    <!--Judgement ID-->
+    <div class="form-group">
+        <label for="judgement-id-field">Judgement ID</label>
+        <input id="judgement-id-field"
+            readonly
+            required
+            cam-variable-name="judgement_id"
+            cam-variable-type="Integer"
+            class="form-control" />
+    </div>
+
+    <!--Judgement text-->
+    <div class="form-group">
+        <label for="judgement-text-field">Judgement text</label>
+        <input id="judgement-text-field"
+            readonly
+            cam-variable-name="judgement_text"
+            cam-variable-type="String"
+            class="form-control" />
+    </div>
+
+    <!--Attachments-->
+    <div class="form-group">
+        <a cam-file-download="judgement_attachments">Attachments</a>
+    </div>
+
+    <!--Judgement text-->
+    <div class="form-group">
+        <label for="judgement-info-field">Judgement additional informations</label>
+        <input id="judgement-info-field"
+            cam-variable-name="judgement_additional"
+            cam-variable-type="String"
+            class="form-control" />
+    </div>
+</form>
